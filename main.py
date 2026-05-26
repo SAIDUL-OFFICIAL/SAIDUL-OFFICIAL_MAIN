@@ -31,7 +31,7 @@ if not BOT_TOKEN:
 # Persistence flag: if DATABASE_URL provided, we'll persist data to Postgres
 PERSISTENCE = bool(DATABASE_URL)
 
-REQUIRED_CHANNELS = ["@Saidul_Official",]
+REQUIRED_CHANNELS = ["@Saidul_Official","@Saidul_bot_34","@premium_like_bot_34"]
 GROUP_JOIN_LINK = "https://t.me/Saidul_bot_34"
 OWNER_ID = 8408849795
 ALLOWED_GROUPS_ID = -1003343057349
