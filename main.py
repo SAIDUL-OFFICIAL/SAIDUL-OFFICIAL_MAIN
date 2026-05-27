@@ -35,7 +35,7 @@ if not BOT_TOKEN:
 # Persistence flag: if DATABASE_URL provided, we'll persist data to Postgres
 PERSISTENCE = bool(DATABASE_URL)
 
-REQUIRED_CHANNELS = ["@Saidul_Official","@premium_like_bot_34"]
+REQUIRED_CHANNELS = ["@Saidul_Official","@premium_like_bot_34","@saidul_34_bot"]
 GROUP_JOIN_LINK = "https://t.me/premium_like_bot_34"
 OWNER_ID = 8408849795
 DEFAULT_AUTO_LIKE_CHAT_ID = -1003988111389
@@ -357,7 +357,7 @@ def is_user_in_channel(user_id):
 
 
 def call_api(region, uid):
-    url = f"https://like-premium-two.vercel.app/like?uid={uid}&server_name={region}"
+    url = f"https://saidul-official-34.vercel.app/like?uid={uid}&server_name={region}"
     try:
         response = requests.get(url, timeout=20)
         if response.status_code != 200:
