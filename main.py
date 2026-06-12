@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 # === CONFIG ===
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-DATABASE_URL = os.getenv("postgresql://neondb_owner:npg_eST0yQYtNJ7g@ep-curly-wildflower-ah1m3ayn.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require") # set this in Render environment variables
+DATABASE_URL = os.getenv("DATABASE_URL") # set this in Render environment variables
 
 if not BOT_TOKEN:
     logger.error("❌ BOT_TOKEN not found! Please set your bot token in environment variables.")
